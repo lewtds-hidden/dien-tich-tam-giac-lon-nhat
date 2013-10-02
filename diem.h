@@ -7,7 +7,9 @@ using namespace std;
 class Diem
 {
     int x, y;
+
 public:
+
     void nhapsl();
     double dodai(Diem d2);
     string toString();
@@ -16,8 +18,8 @@ public:
 
 void Diem::nhapsl()
 {
-    cout<<"x, y = ";
-    cin>>x>>y;
+    cout << "x, y = ";
+    cin >> x >> y;
 }
 
 string Diem::toString()
@@ -30,6 +32,6 @@ string Diem::toString()
 double Diem::dodai(Diem d2)
 {
     double t;
-    t = sqrt((x-d2.x)*(x-d2.x)+(y-d2.y)*(y-d2.y));
+    t = sqrt((x - d2.x) * (x - d2.x) + (y - d2.y) * (y - d2.y));
     return t;
 }

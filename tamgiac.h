@@ -52,8 +52,8 @@ double TamGiac::dientich()
     a = d1.dodai(d2);
     b = d2.dodai(d3);
     c = d3.dodai(d1);
-    p = (a+b+c)/2;
-    return (sqrt(p*(p-a)*(p-b)*(p-c)));
+    p = (a + b + c)/2;
+    return sqrt(p * (p - a) * (p - b) * (p - c));
 }
 
 TamGiac::TamGiac(Diem e1, Diem e2, Diem e3)
