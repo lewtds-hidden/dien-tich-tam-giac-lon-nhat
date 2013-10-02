@@ -32,6 +32,8 @@ string Diem::toString()
 double Diem::doDaiToi(Diem d2)
 {
     double t;
-    t = sqrt((x - d2.x) * (x - d2.x) + (y - d2.y) * (y - d2.y));
+    double deltaX = (x - d2.x);
+    double deltaY = (y - d2.y);
+    t = sqrt(deltaX * deltaX + deltaY * deltaY);
     return t;
 }
