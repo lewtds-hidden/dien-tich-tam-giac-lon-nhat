@@ -49,9 +49,9 @@ string TamGiac::toString()
 double TamGiac::dientich()
 {
     double a, b, c, p;
-    a = d1.dodai(d2);
-    b = d2.dodai(d3);
-    c = d3.dodai(d1);
+    a = d1.doDaiToi(d2);
+    b = d2.doDaiToi(d3);
+    c = d3.doDaiToi(d1);
     p = (a + b + c)/2;
     return sqrt(p * (p - a) * (p - b) * (p - c));
 }

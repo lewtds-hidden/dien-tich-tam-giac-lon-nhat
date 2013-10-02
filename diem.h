@@ -11,8 +11,8 @@ class Diem
 public:
 
     void nhapsl();
-    double dodai(Diem d2);
     string toString();
+    double doDaiToi(Diem d2);
     //Diem(int a, int b);
 };
 
@@ -29,7 +29,7 @@ string Diem::toString()
     return fmt.str();
 }
 
-double Diem::dodai(Diem d2)
+double Diem::doDaiToi(Diem d2)
 {
     double t;
     t = sqrt((x - d2.x) * (x - d2.x) + (y - d2.y) * (y - d2.y));
