@@ -58,9 +58,9 @@ double TamGiac::dientich()
 
 TamGiac::TamGiac(Diem e1, Diem e2, Diem e3)
 {
-    this.d1 = e1;
-    this.d2 = e2;
-    this.d3 = e3;
+    this->d1 = e1;
+    this->d2 = e2;
+    this->d3 = e3;
 }
 
 TamGiac::TamGiac()
