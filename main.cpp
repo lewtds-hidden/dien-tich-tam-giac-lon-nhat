@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
                 tmax = t.maxdt(tmax);  //tra ve tam giac lon hon trong 2 tam giac tmax va t
             }
     cout<< "Tam giac co dien tich lon nhat la: " << tmax.dientich()<<endl;
-    tmax.in();
+    cout << tmax.toString();
     system("pause");
 }

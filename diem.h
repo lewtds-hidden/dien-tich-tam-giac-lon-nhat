@@ -9,8 +9,8 @@ class Diem
     int x, y;
 public:
     void nhapsl();
-    void in();
     double dodai(Diem d2);
+    string toString();
     //Diem(int a, int b);
 };
 
@@ -20,9 +20,11 @@ void Diem::nhapsl()
     cin>>x>>y;
 }
 
-void Diem::in()
+string Diem::toString()
 {
-    cout<<"(x, y)=("<<x<<","<<y<<") "<<endl;
+    std::stringstream fmt;
+    fmt << "(" << x << ", " << y << ")" << endl;
+    return fmt.str();
 }
 
 double Diem::dodai(Diem d2)

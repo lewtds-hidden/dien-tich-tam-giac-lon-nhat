@@ -10,7 +10,7 @@ class TamGiac
     Diem d1, d2, d3;
 public:
     void nhapsl();
-    void in();
+    string toString();
     double dientich();
     TamGiac maxdt(TamGiac t2);
     TamGiac(Diem d1, Diem d2, Diem d3);
@@ -37,11 +37,13 @@ void TamGiac::nhapsl()
     d3.nhapsl();
 }
 
-void TamGiac::in()
+string TamGiac::toString()
 {
-    d1.in();
-    d2.in();
-    d3.in();
+    std::stringstream fmt;
+    fmt << d1.toString() << endl
+        << d2.toString() << endl
+        << d3.toString() << endl;
+    return fmt.str();
 }
 
 double TamGiac::dientich()
