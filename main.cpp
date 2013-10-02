@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     double max = 0;
     int imax, jmax, kmax;
-    TamGiac tmax;
+    TamGiac *tmax = new TamGiac();
 
     cout << "Dien tich cac tam giac la:" << endl;
     for (int i=0; i < count - 2; i++)
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
                 tmax = t.maxdt(tmax);  //tra ve tam giac lon hon trong 2 tam giac tmax va t
             }
 
-    cout << "Tam giac co dien tich lon nhat la: " << tmax.dientich() << endl;
-    cout << tmax.toString();
+    cout << "Tam giac co dien tich lon nhat la: " << tmax->dientich() << endl;
+    cout << tmax->toString();
     system("pause");
 }
