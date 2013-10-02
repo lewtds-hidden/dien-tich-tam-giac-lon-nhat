@@ -9,6 +9,7 @@ class Diem
     int x, y;
 
 public:
+    Diem();
     Diem(int x, int y);
 
     string toString();
@@ -19,6 +20,10 @@ Diem::Diem(int x, int y) {
     this->x = x;
     this-> y = y;
 }
+
+Diem::Diem() {
+    this->x = 0;
+    this->y = 0;
 }
 
 string Diem::toString()
