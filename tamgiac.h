@@ -13,12 +13,12 @@ public:
 
     string toString();
     double dienTich();
-    TamGiac* maxdt(TamGiac *t2);
+    TamGiac* soSanhDienTich(TamGiac *t2);
     TamGiac(Diem d1, Diem d2, Diem d3);
     TamGiac();
 };
 
-TamGiac* TamGiac::maxdt(TamGiac *t2)
+TamGiac* TamGiac::soSanhDienTich(TamGiac *t2)
 {
     return (dienTich() > t2->dienTich()) ? this : t2;
 }

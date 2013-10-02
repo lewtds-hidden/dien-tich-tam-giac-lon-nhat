@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
             for (int k = j + 1; k < count; k++)
             {
                 TamGiac t(*a[i], *a[j], *a[k]);
-                tmax = t.maxdt(tmax);  //tra ve tam giac lon hon trong 2 tam giac tmax va t
+                tmax = t.soSanhDienTich(tmax);  //tra ve tam giac lon hon trong 2 tam giac tmax va t
             }
 
     cout << "Tam giac co dien tich lon nhat la: " << tmax->dienTich() << endl;
