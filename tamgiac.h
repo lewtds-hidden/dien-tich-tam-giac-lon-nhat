@@ -4,46 +4,46 @@
 //#include "diem.h"
 using namespace std;
 
-class TAMGIAC
+class TamGiac
 {
-      DIEM d1, d2, d3;
+      Diem d1, d2, d3;
       public:
       void nhapsl();
       void in();
       double dientich();
-      TAMGIAC maxdt(TAMGIAC t2);
-      TAMGIAC(DIEM d1, DIEM d2, DIEM d3);
-      TAMGIAC();
+      TamGiac maxdt(TamGiac t2);
+      TamGiac(Diem d1, Diem d2, Diem d3);
+      TamGiac();
 };
 
-TAMGIAC TAMGIAC::maxdt(TAMGIAC t2)
+TamGiac TamGiac::maxdt(TamGiac t2)
 {
       double dt;
       dt = dientich();//dien tich cua tam giac hien hanh.
       if (dt < t2.dientich())
          return t2;
-      else 
+      else
       {
-           TAMGIAC t(d1, d2, d3);
+           TamGiac t(d1, d2, d3);
            return t;
-      }  
+      }
 }
 
-void TAMGIAC::nhapsl()
+void TamGiac::nhapsl()
 {
      d1.nhapsl();
      d2.nhapsl();
      d3.nhapsl();
 }
 
-void TAMGIAC::in()
+void TamGiac::in()
 {
      d1.in();
      d2.in();
      d3.in();
 }
 
-double TAMGIAC::dientich()
+double TamGiac::dientich()
 {
      double a, b, c, p;
      a = d1.dodai(d2);
@@ -53,14 +53,14 @@ double TAMGIAC::dientich()
      return (sqrt(p*(p-a)*(p-b)*(p-c)));
 }
 
-TAMGIAC::TAMGIAC(DIEM e1, DIEM e2, DIEM e3)
+TamGiac::TamGiac(Diem e1, Diem e2, Diem e3)
 {
      d1 = e1;
-     d2 = e2; 
+     d2 = e2;
      d3 = e3;
 }
 
-TAMGIAC::TAMGIAC()
+TamGiac::TamGiac()
 {
-    
+
 }
