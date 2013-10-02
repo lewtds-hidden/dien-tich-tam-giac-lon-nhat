@@ -25,7 +25,7 @@ void Diem::nhapsl()
 string Diem::toString()
 {
     std::stringstream fmt;
-    fmt << "(" << x << ", " << y << ")" << endl;
+    fmt << "(" << x << ", " << y << ")";
     return fmt.str();
 }
 
