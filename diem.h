@@ -9,17 +9,16 @@ class Diem
     int x, y;
 
 public:
+    Diem(int x, int y);
 
-    void nhapsl();
     string toString();
     double doDaiToi(Diem d2);
-    //Diem(int a, int b);
 };
 
-void Diem::nhapsl()
-{
-    cout << "x, y = ";
-    cin >> x >> y;
+Diem::Diem(int x, int y) {
+    this->x = x;
+    this-> y = y;
+}
 }
 
 string Diem::toString()
