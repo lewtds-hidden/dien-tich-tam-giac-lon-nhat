@@ -12,22 +12,14 @@ public:
     void nhapsl();
     string toString();
     double dientich();
-    TamGiac maxdt(TamGiac t2);
+    TamGiac* maxdt(TamGiac *t2);
     TamGiac(Diem d1, Diem d2, Diem d3);
     TamGiac();
 };
 
-TamGiac TamGiac::maxdt(TamGiac t2)
+TamGiac* TamGiac::maxdt(TamGiac *t2)
 {
-    double dt;
-    dt = dientich();//dien tich cua tam giac hien hanh.
-    if (dt < t2.dientich())
-        return t2;
-    else
-    {
-        TamGiac t(d1, d2, d3);
-        return t;
-    }
+    return (dientich() > t2->dientich()) ? this : t2;
 }
 
 void TamGiac::nhapsl()
