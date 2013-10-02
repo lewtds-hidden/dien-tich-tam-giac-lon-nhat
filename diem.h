@@ -1,5 +1,7 @@
-#include<iostream>
-#include<math.h>
+#include <iostream>
+#include <sstream>
+#include <math.h>
+
 using namespace std;
 
 class Diem

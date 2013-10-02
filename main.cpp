@@ -1,9 +1,9 @@
 #include <cstdlib>
 #include <iostream>
 
-
 #include "diem.h"
 #include "tamgiac.h"
+
 using namespace std;
 
 int main(int argc, char *argv[])

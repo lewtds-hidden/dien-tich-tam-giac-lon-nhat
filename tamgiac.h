@@ -1,5 +1,6 @@
-#include<iostream>
-#include<math.h>
+#include <iostream>
+#include <math.h>
+#include <sstream>
 
 //#include "diem.h"
 using namespace std;
