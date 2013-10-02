@@ -12,7 +12,7 @@ class TamGiac
 public:
 
     string toString();
-    double dientich();
+    double dienTich();
     TamGiac* maxdt(TamGiac *t2);
     TamGiac(Diem d1, Diem d2, Diem d3);
     TamGiac();
@@ -20,7 +20,7 @@ public:
 
 TamGiac* TamGiac::maxdt(TamGiac *t2)
 {
-    return (dientich() > t2->dientich()) ? this : t2;
+    return (dienTich() > t2->dienTich()) ? this : t2;
 }
 
 string TamGiac::toString()
@@ -32,7 +32,7 @@ string TamGiac::toString()
     return fmt.str();
 }
 
-double TamGiac::dientich()
+double TamGiac::dienTich()
 {
     double a, b, c, p;
     a = d1.doDaiToi(d2);
