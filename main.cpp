@@ -12,11 +12,15 @@ int main(int argc, char *argv[])
     cout << "So diem? ";
     cin >> count;
 
-    Diem a[100];
+    Diem *a[100];
+    int x, y;
     for (int i=0; i<count; i++)
     {
         cout << "Nhap dl cho diem thu " << i << endl;
-        a[i].nhapsl();
+        cout << "x, y = ";
+        cin >> x >> y;
+
+        a[i] = new Diem(x, y);
     }
 
     double max = 0;
@@ -28,7 +32,7 @@ int main(int argc, char *argv[])
         for (int j = i + 1; j < count - 1; j++)
             for (int k = j + 1; k < count; k++)
             {
-                TamGiac t(a[i], a[j], a[k]);
+                TamGiac t(*a[i], *a[j], *a[k]);
                 tmax = t.maxdt(tmax);  //tra ve tam giac lon hon trong 2 tam giac tmax va t
             }
 
