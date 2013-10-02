@@ -8,8 +8,9 @@ using namespace std;
 class TamGiac
 {
     Diem d1, d2, d3;
+
 public:
-    void nhapsl();
+
     string toString();
     double dientich();
     TamGiac* maxdt(TamGiac *t2);
@@ -20,13 +21,6 @@ public:
 TamGiac* TamGiac::maxdt(TamGiac *t2)
 {
     return (dientich() > t2->dientich()) ? this : t2;
-}
-
-void TamGiac::nhapsl()
-{
-    d1.nhapsl();
-    d2.nhapsl();
-    d3.nhapsl();
 }
 
 string TamGiac::toString()
